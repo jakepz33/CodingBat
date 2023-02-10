@@ -1,4 +1,24 @@
-gfh 
 
-print("Hello World")
+#Given a string and a non-negative int n, return a larger string that is n copies of the original string
+
+def string_times(str, n):
+  result = ''
+  for i in range(n):
+    result += str
+  return result
+
+num_call = string_times('Hello', 5)
+print(num_call)
+
+#STRING SPLOSION
+#Given a non-empty string like "Code" return a string like "CCoCodCode"
+
+def string_splosion(str):
+  string = ''
+
+  for i in range(len(str)):
+    string = string + str[:i+1]
+  return string
+
+print(string_splosion('Yessir'))
 
